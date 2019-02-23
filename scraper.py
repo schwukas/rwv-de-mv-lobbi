@@ -4,6 +4,7 @@ import requests
 import re
 import scraperwiki
 import ftfy
+import os
 
 from bs4 import BeautifulSoup as bs
 
