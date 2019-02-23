@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+os.environ["SCRAPERWIKI_DATABASE_NAME"] = "sqlite:///data.sqlite"
+
 import requests
 import re
 import scraperwiki
@@ -8,8 +10,6 @@ import os
 
 from bs4 import BeautifulSoup as bs
 
-
-os.environ["SCRAPERWIKI_DATABASE_NAME"] = "sqlite:///data.sqlite"
 
 # The internet archive has data without broken encoding. Use this for years
 # 2001-2013 (inclusive)
