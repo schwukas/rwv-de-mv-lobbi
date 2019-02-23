@@ -7,6 +7,9 @@ import ftfy
 
 from bs4 import BeautifulSoup as bs
 
+
+os.environ["SCRAPERWIKI_DATABASE_NAME"] = "sqlite:///data.sqlite"
+
 # The internet archive has data without broken encoding. Use this for years
 # 2001-2013 (inclusive)
 ARCHIVE_URL = "https://web.archive.org/web/20150117032248/http://www.lobbi-mv.de:80/chronik/"
