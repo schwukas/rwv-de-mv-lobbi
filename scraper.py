@@ -58,7 +58,7 @@ for year in years:
         description = report_body[1]
 
         city = date_and_location[1].strip()
-        #locations = [landkreis, city]
+        locations = landkreis + ", " + city
 
         # No unique identifier. Instead use a combination of the below.
         uri = city + "_" + start_date + "_" + "DE-MV"
@@ -77,9 +77,7 @@ for year in years:
         scraperwiki.sqlite.save(
             unique_keys=["reportURI"],
             data={"reportURI": uri,
-                  "subdivisons": landkreis,
-                  "latitude": "",
-                  "longitude": ""},
+                  "subdivisons": locations},
             table_name="locations"
         )
 
