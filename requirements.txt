@@ -12,7 +12,7 @@ cssselect==1.0.3
 fake-useragent==0.1.11
 ftfy==5.5.1
 idna==2.8
-lxml==4.3.1
+lxml==4.9.1
 Mako==1.0.7
 MarkupSafe==1.1.0
 parse==1.11.1
